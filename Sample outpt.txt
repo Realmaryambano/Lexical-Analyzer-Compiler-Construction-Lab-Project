@@ -1,0 +1,84 @@
+--- TOKEN STREAM ---
+No.    Type                 Value                Line     Column  
+-----------------------------------------------------------------
+1      INT                  int                  1        1       
+2      IDENTIFIER           x                    1        5       
+3      ASSIGN               =                    1        7       
+4      INTEGER              10                   1        9       
+5      SEMICOLON            ;                    1        11      
+6      INT                  int                  2        1       
+7      IDENTIFIER           y                    2        5       
+8      ASSIGN               =                    2        7       
+9      INTEGER              20                   2        9       
+10     SEMICOLON            ;                    2        11      
+11     FLOAT_TYPE           float                3        1       
+12     IDENTIFIER           z                    3        7       
+13     ASSIGN               =                    3        9       
+14     FLOAT                3.14                 3        11      
+15     SEMICOLON            ;                    3        15      
+16     STRING_TYPE          string               4        1       
+17     IDENTIFIER           name                 4        8       
+18     ASSIGN               =                    4        13      
+19     STRING               Maryam               4        15      
+20     SEMICOLON            ;                    4        23      
+21     BOOL                 bool                 5        1       
+22     IDENTIFIER           flag                 5        6       
+23     ASSIGN               =                    5        11      
+24     TRUE                 true                 5        13      
+25     SEMICOLON            ;                    5        17      
+26     IF                   if                   7        1       
+27     IDENTIFIER           x                    7        4       
+28     GREATERTHAN          >                    7        6       
+29     IDENTIFIER           y                    7        8       
+30     LBRACE               {                    7        10      
+31     PRINT                print                8        5       
+32     IDENTIFIER           x                    8        11      
+33     SEMICOLON            ;                    8        12      
+34     RBRACE               }                    9        1       
+35     ELSE                 else                 10       1       
+36     LBRACE               {                    10       6       
+37     PRINT                print                11       5       
+38     IDENTIFIER           y                    11       11      
+39     SEMICOLON            ;                    11       12      
+40     RBRACE               }                    12       1       
+41     WHILE                while                14       1       
+42     IDENTIFIER           x                    14       7       
+43     GREATERTHAN          >                    14       9       
+44     INTEGER              0                    14       11      
+45     LBRACE               {                    14       13      
+46     IDENTIFIER           x                    15       5       
+47     ASSIGN               =                    15       7       
+48     IDENTIFIER           x                    15       9       
+49     MINUS                -                    15       11      
+50     INTEGER              1                    15       13      
+51     SEMICOLON            ;                    15       14      
+52     RBRACE               }                    16       1       
+53     INT                  int                  18       1       
+54     IDENTIFIER           result               18       5       
+55     ASSIGN               =                    18       12      
+56     IDENTIFIER           x                    18       14      
+57     PLUS                 +                    18       16      
+58     IDENTIFIER           y                    18       18      
+59     SEMICOLON            ;                    18       19      
+60     RETURN               return               19       1       
+61     IDENTIFIER           result               19       8       
+62     SEMICOLON            ;                    19       14      
+63     INT                  int                  22       1       
+64     IDENTIFIER           error                22       5       
+65     ASSIGN               =                    22       11      
+66     SEMICOLON            ;                    22       14      
+
+--- SYMBOL TABLE ---
+Name                 First Line      References
+---------------------------------------------
+x                    1               7         
+y                    2               4         
+z                    3               1         
+name                 4               1         
+flag                 5               1         
+result               18              2         
+error                22              1         
+
+--- ERROR LOG ---
+Line 22, Column 13: Invalid character '@'
+
