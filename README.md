@@ -43,7 +43,7 @@ LexicalAnalyzer/
 ## Installation and Setup
 
 1. Clone the repository
-git clone https://github.com/your-username/Lexical-Analyzer-Compiler-Construction-Lab-Project.git
+git clone https://github.com/Realmaryambano/Lexical-Analyzer-Compiler-Construction-Lab-Project.git
 
 2. Navigate to the project folder
 cd Lexical-Analyzer-Compiler-Construction-Lab-Project
@@ -68,25 +68,31 @@ python gui.py
 ---
 
 ## Sample Input
+
+```python
 int x = 10;
 int y = 20;
 float z = 3.14;
 string name = "Maryam";
 bool flag = true;
+
 if x > y {
-print x;
+    print x;
 }
 else {
-print y;
+    print y;
 }
+
 while x > 0 {
-x = x - 1;
+    x = x - 1;
 }
+
 int result = x + y;
 return result;
-this is a comment
-int error = @;
 
+# this is a comment
+int error = @;
+```
 ---
 
 ## Sample Output
