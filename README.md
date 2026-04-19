@@ -1,4 +1,4 @@
-# Lexical Analyzer — Compiler Construction Lab Project
+# Lexical Analyzer: Compiler Construction Lab Project
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue) ![PLY](https://img.shields.io/badge/PLY-3.11-green) ![Tkinter](https://img.shields.io/badge/GUI-Tkinter-orange) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
@@ -101,8 +101,32 @@ int error = @;
 - Symbol table with 7 identifiers tracked
 - Error log reporting invalid character @ at Line 22 Column 13
 
----
+## Sample Input
 
+```python
+int x = 10;
+int y = 20;
+float z = 3.14;
+string name = "Maryam";
+bool flag = true;
+
+if x > y {
+    print x;
+}
+else {
+    print y;
+}
+
+while x > 0 {
+    x = x - 1;
+}
+
+int result = x + y;
+return result;
+
+# this is a comment
+int error = @;
+```
 ## Course Information
 
 - Course: Compiler Construction Lab
