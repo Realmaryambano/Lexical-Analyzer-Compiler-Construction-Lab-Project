@@ -24,3 +24,4 @@ class ErrorHandler:
             print("-" * 60)
             for error in self.errors:
                 print(f"{error['message']:<40} {error['line']:<10} {error['column']:<10}")
+                
