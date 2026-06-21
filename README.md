@@ -7,7 +7,23 @@
 This project is a complete and advanced Lexical Analyzer built as part of the Compiler Construction Lab course. A Lexical Analyzer is the first phase of a compiler. It reads raw source code as plain text, scans through it character by character, and breaks it down into meaningful units called tokens. Each token is classified by type and tracked with its exact line and column number. The project goes beyond basic tokenization by including a Symbol Table, an Error Recovery System, and a clean Graphical User Interface built with Tkinter.
 
 ---
+---
 
+## Screenshots
+
+### Graphical User Interface
+
+![Lexical Analyzer GUI](images/gui-interface.png)
+
+### Token Stream, Symbol Table & Error Output
+
+![Token Output](images/token-output.png)
+
+### Exported Results
+
+![Exported Results](images/exported-results.png)
+
+---
 ## Features
 
 - Tokenizes source code into a complete classified token stream
@@ -23,14 +39,19 @@ This project is a complete and advanced Lexical Analyzer built as part of the Co
 ---
 
 ## Project Structure
-LexicalAnalyzer/
-│
-├── lexer.py            # Core lexer engine built using PLY
-├── symbol_table.py     # Symbol table to track identifiers
-├── error_handler.py    # Error detection and recovery system
-└── gui.py              # Graphical user interface built with Tkinter
 
----
+```text
+Lexical-Analyzer-Compiler-Construction-Lab-Project/
+│
+├── lexer.py
+├── symbol_table.py
+├── error_handler.py
+├── GUI.py
+├── README.md
+├── Sample Code For Testing.txt
+├── Exporting result.txt
+└── Exporting Result 2.txt
+```
 
 ## Technologies Used
 
@@ -101,32 +122,6 @@ int error = @;
 - Symbol table with 7 identifiers tracked
 - Error log reporting invalid character @ at Line 22 Column 13
 
-## Sample Input
-
-```python
-int x = 10;
-int y = 20;
-float z = 3.14;
-string name = "Maryam";
-bool flag = true;
-
-if x > y {
-    print x;
-}
-else {
-    print y;
-}
-
-while x > 0 {
-    x = x - 1;
-}
-
-int result = x + y;
-return result;
-
-# this is a comment
-int error = @;
-```
 ## Course Information
 
 - Course: Compiler Construction Lab
@@ -134,7 +129,3 @@ int error = @;
 - Concepts Applied: Regular Expressions, Finite Automata, Token Classification, Symbol Table Design, Error Handling and Recovery
 
 ---
-
-## License
-
-This project is personally developed and owned by Maryam Bano. All rights reserved. Do not copy, reuse, or redistribute any part of this project without permission.
